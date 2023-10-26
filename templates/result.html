@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XPath 추천 결과</title>
+</head>
+<body>
+    <h1>XPath 추천 결과</h1>
+    <h2>원본 XPath:</h2>
+    <ul>
+        {% for xpath in xpath_data %}
+        <li>{{ xpath }}</li>
+        {% endfor %}
+    </ul>
+    <h2>추천된 패턴:</h2>
+    <ul>
+        {% for recommended_xpath in recommended_xpaths %}
+        <li>{{ recommended_xpath }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
